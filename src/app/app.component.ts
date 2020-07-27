@@ -8,10 +8,21 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name: string;
   date: string;
-  currency: string;
+  amount: number;
+  height: number;
 
-  onCurrencyChange(value: string){
-    this.currency = value;
+  car = {
+    make: 'Honda',
+    model: 'Civic',
+    year: 2013
+  }
+
+  onHeightChange(value: string) {
+    this.height = parseFloat(value);
+  }
+
+  onAmountChange(value: string){
+    this.amount = parseFloat(value);
   }
 
   onDateChange(value: string){
