@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pipe-app';
+  onNameChange(value: string){
+    console.log(value)
+  }
 }
