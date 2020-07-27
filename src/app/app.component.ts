@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipe-app';
+  name: string;
   onNameChange(value: string){
-    console.log(value)
+    this.name = value
   }
 }
