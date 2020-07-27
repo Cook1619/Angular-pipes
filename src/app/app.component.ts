@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name: string;
   date: string;
+  currency: string;
+
+  onCurrencyChange(value: string){
+    this.currency = value;
+  }
 
   onDateChange(value: string){
     this.date = value;
